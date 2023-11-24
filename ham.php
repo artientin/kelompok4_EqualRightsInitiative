@@ -89,9 +89,8 @@
   <div class="row justify-content-center">
     <div class="col-8">
         <br>
-        <p>- Hak asasi manusia merupakan hak dasar yang secara kodrati melekat pada diri manusia, bersifat universal dan langgeng, oleh karena itu harus dilindungi, dihormati, dipertahankan, dan tidak boleh diabaikan, dikurangi, atau dirampas oleh siapapun. Selain hak asasi, manusia juga mempunyai kewajiban dasar antara manusia yang satu terhadap yang lain dan terhadap masyarakat secara keseluruhan dalam kehidupan bermasyarakat, berbangsa, dan bernegara. Bangsa Indonesia sebagai anggota Perserikatan Bangsa-Bangsa mengemban tanggung jawab moral dan hukum untuk menjunjung tinggi dan melaksanakan Deklarasi Universal tentang Hak Asasi Manusia yang ditetapkan oleh Perserikatan Bangsa-Bangsa, serta berbagai instrumen internasional lainnya mengenai hak asasi manusia yang telah diterima oleh negara Republik Indonesia. Atas dasar pertimbangan sebagaimana tersebut, dan dalam rangka melaksanakan Ketetapan Majelis Permusyawaratan Rakyat Republik Indonesia Nomor XVII/MPR/1998 tentang Hak Asasi Manusia, perlu membentuk Undang-undang tentang Hak Asasi Manusia.</p>
-        <br>
-        <p>- Dasar hukum undang-undang ini adalah : Pasal 5 ayat (1), Pasal 20 ayat (1), Pasal 26, Pasal 27, Pasal 28, Pasal 30, Pasal 31, Pasal 32, Pasal 33 ayat (1) dan ayat (3), dan Pasal 34 Undang-Undang Dasar 1945; dan Ketetapan Majelis Permusyawaratan Rakyat Nomor XVII/MPR/1998 tentang Hak Asasi Manusia.</p>
+        <p>- Hak asasi manusia merupakan hak dasar yang secara kodrati melekat pada diri manusia, bersifat universal dan langgeng, oleh karena itu harus dilindungi, dihormati, dipertahankan, dan tidak boleh diabaikan, dikurangi, atau dirampas oleh siapapun. Selain hak asasi, manusia juga mempunyai kewajiban dasar antara manusia yang satu terhadap yang lain dan terhadap masyarakat secara keseluruhan dalam kehidupan bermasyarakat, berbangsa, dan bernegara. Bangsa Indonesia sebagai anggota Perserikatan Bangsa-Bangsa mengemban tanggung jawab moral dan hukum untuk menjunjung tinggi dan melaksanakan Deklarasi Universal tentang Hak Asasi Manusia yang ditetapkan oleh Perserikatan Bangsa-Bangsa, serta berbagai instrumen internasional lainnya mengenai hak asasi manusia yang telah diterima oleh negara Republik Indonesia. Atas dasar pertimbangan sebagaimana tersebut, dan dalam rangka melaksanakan Ketetapan Majelis Permusyawaratan Rakyat Republik Indonesia Nomor XVII/MPR/1998 tentang Hak Asasi Manusia, perlu membentuk Undang-undang tentang Hak Asasi Manusia.
+        - Dasar hukum undang-undang ini adalah : Pasal 5 ayat (1), Pasal 20 ayat (1), Pasal 26, Pasal 27, Pasal 28, Pasal 30, Pasal 31, Pasal 32, Pasal 33 ayat (1) dan ayat (3), dan Pasal 34 Undang-Undang Dasar 1945; dan Ketetapan Majelis Permusyawaratan Rakyat Nomor XVII/MPR/1998 tentang Hak Asasi Manusia.</p>
         <br>
         <p>- Dalam Undang-Undang ini diatur tentang : hak untuk hidup dan hak untuk tidak kehilangan paksa dan/atau tidak dihilangkan nyawa, hak berkeluarga dan melanjutkan keturunan, hak mengembangkan diri, hak memperoleh keadilan, hak atas kebebasan pribadi, hak atas rasa aman, hak atas kesejahteraan, hak turut serta dalam pemerintahan, hak wanita, hak anak, dan hak atas kebebasan beragama. Selain mengatur hak asasi manusia, diatur pula mengenai kewajiban dasar, serta tugas dan tanggung jawab pemerintah dalam penegakan hak asasi manusia. Diatur mengenai Pembentukan Komisi Nasional Hak Asasi Manusia sebagai lembaga mandiri yang mempunyai fungsi, tugas, wewenang, dan tanggung jawab untuk melaksanakan pengkajian, penelitian, penyuluhan, pemantauan, dan mediasi tentang hak asasi manusia. diatur pula tentang partisipasi masyarakat berupa pengaduan dan/atau gugatan atas pelanggaran hak asasi manusia, pengajuan usulan mengenai perumusan kebijakan yang berkaitan dengan hak asasi manusia kepada Komnas HAM, penelitian, pendidikan, dan penyebarluasan informasi mengenai hak asasi manusia.</p>
         <br>
@@ -105,16 +104,6 @@
   </div>
   <!-- end ham section -->
 
-  <?php
-  include 'config.php';
-  if (isset($_POST['tambah'])){
-    mysqli_query($conn, "INSERT INTO subscribe SET
-    email = '$_POST[sub]'");
-    
-    echo "<script>alert('Email telah dikirim')</script>";
-  }
-  ?>
-
   <div class="footer_container">
     <!-- info section -->
 
@@ -127,7 +116,7 @@
                 PBO
               </h4>
               <p>
-                Menyediakann layananan bagi masyarakat yang ingin menyampaikan atau memberitahukan masalahnya.
+                Necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful
               </p>
             </div>
           </div>
@@ -156,9 +145,9 @@
             <h4>
               Subscribe
             </h4>
-            <form action="#" method="POST">
-              <input type="text" name="sub" placeholder="Masukkan Email" />
-              <button type="submit" name="tambah">
+            <form action="#">
+              <input type="text" placeholder="Masukkan Email" />
+              <button type="submit">
                 Subscribe
               </button>
             </form>
