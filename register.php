@@ -2,18 +2,18 @@
 error_reporting(0);
 include 'config.php';
 session_start();
- 
+
 if (isset($_SESSION['username'])) {
     header("Location: index.php");
     exit();
 }
- 
+
 if (isset($_POST['submit'])) {
     $username = $_POST['username'];
     $email = $_POST['email'];
     $password = hash('sha256', $_POST['password']);
     $cpassword = hash('sha256', $_POST['cpassword']);
- 
+
     if ($password == $cpassword) {
         $sql = "SELECT * FROM masuk WHERE email='$email'";
         $result = mysqli_query($conn, $sql);
@@ -38,9 +38,10 @@ if (isset($_POST['submit'])) {
     }
 }
 ?>
- 
+
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -48,6 +49,7 @@ if (isset($_POST['submit'])) {
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>PBO</title>
 </head>
+
 <body>
     <div class="container">
         <form action="" method="POST" class="login-email">
@@ -67,8 +69,9 @@ if (isset($_POST['submit'])) {
             <div class="input-group">
                 <button name="submit" class="btn">Register</button>
             </div>
-            <p class="login-register-text">Anda sudah punya akun? <a href="index.php">Login</a></p>
+            <p class="login-register-text">Apakah anda sudah punya akun? <a href="index.php">Login</a></p>
         </form>
     </div>
 </body>
+
 </html>
