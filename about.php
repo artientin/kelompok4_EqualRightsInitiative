@@ -151,7 +151,7 @@
           </div>
           <div class="col-md-6 col-lg-3 ">
             <h4>
-              Subscribe
+              Subscrib
             </h4>
             <form action="#" method="POST">
               <input type="text" name="sub" placeholder="Masukkan Email" />
